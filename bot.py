@@ -96,7 +96,39 @@ async def on_message(message):
     if "events" in db.keys():
       events = db["events"]
     await message.channel.send(events)
+#to send notif
+ini_time_for_now = datetime.now()
+#array containing the tests and assignments
+x=['testmath%4','testscience%6']
 
+timern = str(ini_time_for_now)
+print(timern[8:11])
+async def check(x):
+  for i in x:
+    temp = i.split('%')
+    temp_name,temp_time = temp[0],temp[1]
+    temp3 = str(datetime.now())
+    temp3 = temp3[8:11]
+    if temp3 == temp[1]:
+      on_message()
+
+
+@Bot.command(pass_context=True)
+async def countdown(ctx, seconds: int):
+    td = timedelta(seconds=seconds)
+    while True:
+        await Bot.say(time_repr(td))
+        if td.total_seconds() > 30:
+            td -= timedelta(seconds=30)
+            await sleep(30)
+        elif td.total_seconds > 10:
+            td -= timedelta(seconds=10)
+            await sleep(10)
+        elif td.total_seconds > 1:
+            td -= timedelta(seconds=1)
+            await sleep(1)
+        else:
+            break
 
 print(os.getenv('TOKEN') is None)
 client.run(TOKEN)
