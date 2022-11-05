@@ -24,7 +24,6 @@ async def on_ready():
         f'{client.user} is connected to the following guild:\n'
         f'{guild.name}(id: {guild.id})'
     )
-#bot = Bot(intents=intents, command_prefix='$') # or whatever prefix you choose(!,%,?)
 
 @client.event
 async def on_message(message):
