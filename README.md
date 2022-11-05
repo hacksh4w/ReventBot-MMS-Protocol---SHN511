@@ -16,7 +16,7 @@ Tech-Hero : DISCORD API
 
 
 ## What is ReventBot?
-Revent is a Student Productivity Booster Discord Bot. Students can track events like tests, assignments or game matches by applying a bot command with event type, event name, and time of occurance. The bot send out reminders in designated times to ensure all students can complete/attend their events. Tests have reminders 3 Days,2 Days and 1 Day before date of Test, Assignments 3 Days, 1 Day and 6 hours. 
+Revent is a Student Productivity Booster Discord Bot. Students can track events like tests, assignments or game matches by applying a bot command with event type, event name, and time of occurance. The bot sends out reminders in designated times to ensure all students can complete/attend their events. Tests have reminders 3 Days,2 Days and 1 Day before date of Test, Assignments 3 Days, 1 Day and 6 hours. 
 
 # Team Members
 
@@ -40,4 +40,4 @@ https://user-images.
 # Installation
 Steps To Run the Project:
 
-1.Downloading the Modules
+1.Downloading the Modules.
