@@ -1,6 +1,7 @@
 # MMS-Protocol---SHN511
 # **<div align="center">Collaber</div>**  
 A Collabration Discord Bot using Python, Discord.py where Students can track events like tests, assignments or game matches by applying a bot command with event type, event name, and time of occurance. The bot send out reminders in designated times to ensure all students can complete/attend their events. 
+
 Repo for Saturday Hacknight on 5th Nov 2022
 Tech-Hero : DISCORD API
 
