@@ -1,12 +1,12 @@
 # MMS-Protocol---SHN511
-# **<div align="center">Collaber</div>**  
-A Collabration Discord Bot using Python, Discord.py where Students can track events like tests, assignments or game matches by applying a bot command with event type, event name, and time of occurance. The bot send out reminders in designated times to ensure all students can complete/attend their events. 
+# **<div align="center">REVENT</div>**  
+A Productivity Discord Bot using Python & Discord.py that allows students to schedule reminders for different types of events namely Tests, Assignments and Game Matches.
 
 Repo for Saturday Hacknight on 5th Nov 2022
 Tech-Hero : DISCORD API
 
 ## Table of Contents
-1. [What is BOTNAME](#project-description)
+1. [What is ReventBot](#project-description)
 2. [Team Members](#team-members)
 3. [Key Features](#key-features)
 4. [Project Demo](#project-demo)
@@ -14,8 +14,8 @@ Tech-Hero : DISCORD API
 
 
 
-## What is Collaber?
-BOTNAME is a Student Productivity Booster Discord Bot.  
+## What is ReventBot?
+Revent is a Student Productivity Booster Discord Bot. Students can track events like tests, assignments or game matches by applying a bot command with event type, event name, and time of occurance. The bot send out reminders in designated times to ensure all students can complete/attend their events. Tests have reminders 3 Days,2 Days and 1 Day before date of Test, Assignments 3 Days, 1 Day and 6 hours. 
 
 # Team Members
 
