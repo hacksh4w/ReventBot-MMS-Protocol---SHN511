@@ -5,6 +5,7 @@ A Productivity Discord Bot using Python & Discord.py that allows students to sch
 Repo for Saturday Hacknight on 5th Nov 2022
 Tech-Hero : DISCORD API
 
+<img src ="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"> <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
 ## Table of Contents
 1. [What is ReventBot](#project-description)
 2. [Team Members](#team-members)
