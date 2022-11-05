@@ -5,7 +5,6 @@ import random
 from discord.ext import commands
 from discord.ext.commands import Bot
 from discord import Intents
-#from keep_alive import keep_alive
 
 intents = Intents.all()
 from dotenv import load_dotenv
@@ -13,8 +12,10 @@ from dotenv import load_dotenv
 load_dotenv('.env')
 TOKEN = os.getenv("DISCORD_TOKEN")
 GUILD = os.getenv("DISCORD_GUILD")
+intents=discord.Intents.default()
 
-client = discord.Client(intents=discord.Intents.default())
+client = discord.Client(intents=intents)
+intents.message_content = True
 
 @client.event
 async def on_ready():
@@ -23,10 +24,14 @@ async def on_ready():
         f'{client.user} is connected to the following guild:\n'
         f'{guild.name}(id: {guild.id})'
     )
+#bot = Bot(intents=intents, command_prefix='$') # or whatever prefix you choose(!,%,?)
 
-
-bot = Bot(intents=intents, command_prefix='$')  # command prefix
-
-#keep_alive()
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+      return
+    if message.content.startswith('$hello'):
+      await message.channel.send('Hello! {}'.format(client.user))
+    
 print(os.getenv('TOKEN') is None)
 client.run(TOKEN)
