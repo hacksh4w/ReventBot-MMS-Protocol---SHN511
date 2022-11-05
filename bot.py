@@ -84,21 +84,21 @@ async def check(x):
     if temp3 == temp[1]:
       on_message()
 
-
+#Time check command for Tests
 @Bot.command(pass_context=True)
 async def countdown(ctx, seconds: int):
     td = timedelta(seconds=seconds)
     while True:
         await Bot.say(time_repr(td))
-        if td.total_seconds() > 30:
-            td -= timedelta(seconds=30)
-            await sleep(30)
-        elif td.total_seconds > 10:
-            td -= timedelta(seconds=10)
-            await sleep(10)
-        elif td.total_seconds > 1:
-            td -= timedelta(seconds=1)
-            await sleep(1)
+        if td.total_seconds() > 259200: # 3 days
+            td -= timedelta(seconds=259200)
+            await sleep(timren-259200) # time until 3 days
+        elif td.total_seconds > 172800: # 2 days
+            td -= timedelta(seconds=172800) 
+            await sleep(10)  # time until 2 days
+        elif td.total_seconds > 86,400: # 1 day
+            td -= timedelta(seconds=86,400) 
+            await sleep(1)  # time until 1 day
         else:
             break
 
